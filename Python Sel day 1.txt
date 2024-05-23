@@ -1,0 +1,64 @@
+Selenium:
+==========
+
+Selenium is a powerful tool for controlling web browsers through programs and performing browser automation. 
+It is functional for all browsers, works on all major OS and its scripts are written in various languages i.e Python, Java, C#, etc,.
+
+
+Why learn Selenium Python ?
+===========================
+
+Open Source and Portable – Selenium is an open source and portable Web testing Framework.
+
+Combination of tool and DSL – Selenium is combination of tools and DSL (Domain Specific Language) in order to carry out various types of tests.
+
+Easier to understand and implement – Selenium commands are categorized in terms of different classes which make it easier to understand and implement.
+
+Less burden and stress for testers – As mentioned above, the amount of time required to do testing repeated test scenarios on each and every new build is reduced to zero. Hence, the burden of the tester gets reduced.
+
+Cost reduction for the Business Clients – The Business needs to pay the testers their salary, which is saved using an automation testing tool. Automation not only saves time but also gets cost benefits too, to the business.
+
+Increased test coverage – With the uses of Selenium, testing time gets reduced and hence the tester can do more testing on other test scenarios at the same time.
+
+Reduce test execution time – Selenium supports parallel test execution that reduce the time taken in executing parallel tests.
+
+Lesser resources required – Selenium requires lesser resources when compared to its competitors like UFT, RFT, etc.
+
+Supports Multiple Programming Languages – C#, Java, Python, PHP, Ruby, Perl, and JavaScript.
+
+Supports Multiple Operating Systems – Android, iOS, Windows, Linux, Mac, Solaris.
+
+Supports Multiple Browsers – Google Chrome, Mozilla Firefox, Internet Explorer, Edge, Opera, Safari, etc.
+
+Parallel Test Execution – It also supports parallel test execution which reduces time and increases the efficiency of tests.
+
+A flexible language – Once the test cases are prepared, they can be executed on any operating system like Linux, Macintosh, etc.
+
+No installation Required – Selenium web driver does not require server installation, test scripts interact directly with the browser.
+
+
+=====================================================================================================
+
+BROWSER LAUNCH
+----------------
+
+from selenium import webdriver
+
+# Set up Chrome options
+
+options = webdriver.ChromeOptions()
+
+# add_experimental_option("detach", True) to tell ChromeDriver to leave the browser open when the script ends.
+
+options.add_experimental_option(name="detach", value=True)
+
+# Initialize the WebDriver with the options
+driver = webdriver.Chrome(options)
+
+# Maximiez window or full screen
+driver.maximize_window()
+
+# To Launch the URL
+driver.get("URL")
+
+
